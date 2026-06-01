@@ -1,5 +1,5 @@
 import { SectionTitle } from "./SectionTitle";
-import imgFraud from "@/assets/project-fraud.jpg";
+import imgFraud from "@/assets/project-fraud.png";
 import imgChurn from "@/assets/project-churn.jpg";
 import imgLoan from "@/assets/project-loan.jpg";
 import imgOptical from "@/assets/project-optical.jpg";
@@ -18,21 +18,21 @@ const projects = [
       "Gestion outliers ×7 + StratifiedKFold",
     ],
     tech: ["Python", "XGBoost", "LightGBM", "CatBoost", "Scikit-learn"],
-    link: "#",
+    link: "https://github.com/chaimaabenradouan/competition_indus",
   },
   {
     img: imgFraud,
     title: "Fraud Detection System",
     badge: "Machine Learning / FinTech",
     description:
-      "Détection de fraude bancaire entraînée sur 284 807 transactions, intégrée à une plateforme web pour analystes avec dashboard statistique et alertes temps réel.",
+      "J'ai conçu une plateforme complète pour analystes bancaires, du scoring automatique à la résolution des cas suspects. Le système détecte les transactions frauduleuses en temps réel, alerte les analystes via un dashboard central, et leur offre une interface d'investigation détaillée pour valider, refuser ou bloquer chaque opération. Un workflow de vérification client par email sécurisé permet de confirmer l'authenticité des transactions à risque, avec une file d'attente dédiée et un suivi des réponses. Le module statistiques génère des rapports PDF téléchargeables pour le pilotage métier, le tout sécurisé par authentification, contrôle d'accès par rôles et traçabilité complète des actions.",
     highlights: [
-      "Random Forest • Recall 83% • F1 83%",
-      "ROC-AUC 0.974",
+      "XGBoost •  F1 96.77",
+      "ROC-AUC 0.999932",
       "Temps réel via Socket.IO",
     ],
-    tech: ["Python", "Flask", "React", "Scikit-learn", "Socket.IO"],
-    link: "#",
+    tech: ["Python", "Flask", "React", "Scikit-learn", "Socket.IO", "XGBoost", "SQLite"],
+    link: "https://github.com/chaimaabenradouan/competition_indus",
   },
   {
     img: imgChurn,
@@ -46,7 +46,7 @@ const projects = [
       "Hyperparameter tuning GridSearchCV",
     ],
     tech: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
-    link: "#",
+    link: "https://github.com/chaimaabenradouan/churn_project",
   },
   {
     img: imgLoan,
@@ -60,7 +60,7 @@ const projects = [
       "Déploiement via Streamlit",
     ],
     tech: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
-    link: "#",
+    link: "https://github.com/chaimaabenradouan/loan-approval-prediction",
   },
   {
     img: imgFlora,
@@ -73,7 +73,7 @@ const projects = [
       "Pages Home, About, Products, Contact",
       "Stack XAMPP local",
     ],
-    tech: ["WordPress", "PHP", "CSS", "XAMPP"],
+    tech: ["WordPress","Blossom Shop Theme", "XAMPP"],
     link: "#",
   },
 ];

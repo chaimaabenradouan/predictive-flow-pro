@@ -31,7 +31,7 @@ export function Navbar() {
           href="#home"
           className="font-mono-tech font-bold text-primary text-sm sm:text-base tracking-[0.2em] uppercase cursor-blink whitespace-nowrap"
         >
-          C.BENRADOUAN
+          Chaimaa BENRADOUAN
         </a>
 
         {/* Desktop */}

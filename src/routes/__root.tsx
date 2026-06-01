@@ -7,10 +7,10 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+// Removed lovable error reporting - using built-in console logging
 
 function NotFoundComponent() {
   return (
@@ -37,9 +37,7 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
+  // error reporting: logged to console only
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -79,16 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "chaimaaportfolio" },
       { name: "description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
-      { name: "author", content: "Lovable" },
+      { name: "author", content: "Chaimaa Benradouan" },
       { property: "og:title", content: "chaimaaportfolio" },
       { property: "og:description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "chaimaaportfolio" },
       { name: "twitter:description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f3f735a-d968-48bc-a67c-098db3afeef5/id-preview-be816c82--f6f5d248-2384-4818-bc6a-336b82b9a9a6.lovable.app-1780331260601.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f3f735a-d968-48bc-a67c-098db3afeef5/id-preview-be816c82--f6f5d248-2384-4818-bc6a-336b82b9a9a6.lovable.app-1780331260601.png" },
+      // og/twitter image removed (was a Lovable-hosted asset)
     ],
     links: [
       {

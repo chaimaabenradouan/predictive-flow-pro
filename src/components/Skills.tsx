@@ -7,7 +7,7 @@ const groups = [
   },
   {
     title: "Data Science & AI",
-    items: ["Scikit-learn", "Pandas", "NumPy", "XGBoost", "LightGBM", "CatBoost", "SMOTE", "Matplotlib", "Seaborn"],
+    items: ["Scikit-learn", "Pandas", "NumPy", "XGBoost", "LightGBM", "CatBoost", "SMOTE", "Matplotlib", "Seaborn", "TensorFlow", "joblib"],
   },
   {
     title: "Web Development",

@@ -1,5 +1,5 @@
-import profileAsset from "@/assets/profile-photo.png.asset.json";
-const profileImg = profileAsset.url;
+import profileAsset from "@/assets/photoprofile.png";
+const profileImg = profileAsset;
 
 export function Hero() {
   return (
@@ -16,7 +16,7 @@ export function Hero() {
             Chaimaa <span className="gradient-text">Benradouan</span>
           </h1>
           <p className="font-mono-tech text-base sm:text-lg text-secondary mb-4">
-            &lt; Computer Science &amp; AI Engineer /&gt;
+            &lt; Computer Science &amp; AI Engineering Student /&gt;
           </p>
           <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
             Passionnée par l'IA, la Data Science et le développement web.

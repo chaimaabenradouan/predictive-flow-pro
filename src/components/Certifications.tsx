@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { SectionTitle } from "./SectionTitle";
-import certIaai from "@/assets/cert-iaai.jpg.asset.json";
-import certOracle from "@/assets/cert-oracle.png.asset.json";
-import certIbm from "@/assets/cert-ibm.png.asset.json";
-import certHp from "@/assets/cert-hp.jpg.asset.json";
+import certIaai from "@/assets/certiaai.png";
+import certOracle from "@/assets/oracle.png";
+import certIbm from "@/assets/imbcertif.png";
+import certHp from "@/assets/hpcertif.jpeg";
 
 const certs = [
   {
@@ -11,7 +11,7 @@ const certs = [
     issuer: "IAAI Academy",
     year: "Août 2025",
     score: "17/20",
-    image: certIaai.url,
+    image: certIaai,
     skills: ["Python", "Pandas", "NumPy", "EDA", "Statistiques", "ML supervisé"],
     project: "Telco Churn",
     description:
@@ -22,7 +22,7 @@ const certs = [
     issuer: "Oracle University",
     year: "Mai 2026",
     score: "88%",
-    image: certOracle.url,
+    image: certOracle,
     skills: ["IA générative", "LLMs", "Deep Learning", "OCI AI Services"],
     description:
       "Certification officielle Oracle validant la maîtrise des fondamentaux de l'IA, du Machine Learning, du Deep Learning et des services IA d'Oracle Cloud Infrastructure.",
@@ -31,7 +31,7 @@ const certs = [
     title: "Python for Data Science, AI & Development",
     issuer: "IBM (Coursera)",
     year: "Février 2026",
-    image: certIbm.url,
+    image: certIbm,
     skills: ["Python", "Pandas", "NumPy", "API", "Web Scraping"],
     description:
       "Cours IBM délivré via Coursera couvrant Python appliqué à la data science : structures de données, manipulation avec Pandas/NumPy, accès API et web scraping.",
@@ -40,7 +40,7 @@ const certs = [
     title: "L'IA pour les débutants",
     issuer: "HP LIFE — HP Foundation",
     year: "Janvier 2026",
-    image: certHp.url,
+    image: certHp,
     skills: ["Concepts IA", "Applications business", "Éthique IA", "Données"],
     description:
       "Certificat de fin de cours HP LIFE attestant la réussite du programme « L'IA pour les débutants ». Acquisition d'une compréhension de base de l'impact de l'intelligence artificielle sur le paysage technologique : concepts clés, applications concrètes, importance des données pour l'IA, usages en entreprise et implications éthiques.",
