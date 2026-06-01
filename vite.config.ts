@@ -13,6 +13,7 @@ import tailwind from "@tailwindcss/vite";
 export default defineConfig({
   // Explicit Vite config (removed Lovable wrapper)
   plugins: [tanstackStart(), tailwind(), react(), tsconfigPaths()],
+  publicDir: "public",
   server: {
     port: 8080,
     strictPort: true,
