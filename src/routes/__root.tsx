@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "chaimaaportfolio" },
+      { name: "description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "chaimaaportfolio" },
+      { property: "og:description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "chaimaaportfolio" },
+      { name: "twitter:description", content: "AI-powered portfolio showcasing machine learning projects and technical skills." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f3f735a-d968-48bc-a67c-098db3afeef5/id-preview-be816c82--f6f5d248-2384-4818-bc6a-336b82b9a9a6.lovable.app-1780331260601.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f3f735a-d968-48bc-a67c-098db3afeef5/id-preview-be816c82--f6f5d248-2384-4818-bc6a-336b82b9a9a6.lovable.app-1780331260601.png" },
     ],
     links: [
       {
