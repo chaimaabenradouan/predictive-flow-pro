@@ -1,29 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Education } from "@/components/Education";
+import { Skills } from "@/components/Skills";
+import { Projects } from "@/components/Projects";
+import { Certifications } from "@/components/Certifications";
+import { Contact } from "@/components/Contact";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Chaimaa Benradouan — AI & Data Science Engineer" },
+      {
+        name: "description",
+        content:
+          "Portfolio de Chaimaa Benradouan, élève-ingénieure en Génie Informatique et IA — projets Machine Learning, Data Science, Web Development.",
+      },
+      { property: "og:title", content: "Chaimaa Benradouan — AI & Data Science Engineer" },
+      {
+        property: "og:description",
+        content:
+          "Portfolio de Chaimaa Benradouan — Machine Learning, Data Science, Web Development.",
+      },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="relative">
+      <Navbar />
+      <Hero />
+      <About />
+      <Education />
+      <Skills />
+      <Projects />
+      <Certifications />
+      <Contact />
+    </main>
   );
 }
