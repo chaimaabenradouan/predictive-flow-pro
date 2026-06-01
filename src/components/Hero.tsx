@@ -1,4 +1,5 @@
-import profileImg from "@/assets/profile.jpg";
+import profileAsset from "@/assets/profile-photo.png.asset.json";
+const profileImg = profileAsset.url;
 
 export function Hero() {
   return (
