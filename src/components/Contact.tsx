@@ -41,7 +41,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/chaimaa-benradouan-a10a563a7/"
               target="_blank"
               rel="noreferrer"
               className="group flex items-center gap-4 p-5 border border-border clip-corner-sm hover:border-primary transition-all hover:bg-primary/5"
@@ -56,7 +56,7 @@ export function Contact() {
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/chaimaabenradouan"
               target="_blank"
               rel="noreferrer"
               className="group flex items-center gap-4 p-5 border border-border clip-corner-sm hover:border-primary transition-all hover:bg-primary/5"
