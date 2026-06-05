@@ -32,7 +32,7 @@ const projects = [
       "Temps réel via Socket.IO",
     ],
     tech: ["Python", "Flask", "React", "Scikit-learn", "Socket.IO", "XGBoost", "SQLite"],
-    link: "https://github.com/chaimaabenradouan/competition_indus",
+    link: "https://github.com/imaneennaji-12/mini_projet/",
   },
   {
     img: imgChurn,
